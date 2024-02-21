@@ -1,0 +1,135 @@
+#blogs-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45%;
+  /* border: 1px solid blue; */
+  /* background-color: red; */
+}
+
+#list-scroll-container {
+  width: 95%;
+  height: 95%;
+  min-height: 95%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+#list-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.post-item {
+  width: 70%;
+  height: 150px;
+  min-height: 150px;
+  background-color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  margin-left: 20px;
+
+  grid-template-areas:
+    "post-title-wrapper"
+    "post-author-wrapper"
+    "post-content-wrapper"
+    "post-crudbtn-wrapper";
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 15% 50% 20%;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.post-title-wrapper {
+  width: 100%;
+  height: 100%;
+  grid-area: post-title-wrapper;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post-title-wrapper p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.post-author-wrapper {
+  width: 100%;
+  height: 100%;
+  grid-area: post-author-wrapper;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.post-author-wrapper p {
+  font-size: 0.6rem;
+  margin-left: 2px;
+}
+
+#createdate {
+  font-size: 0.6rem;
+  margin-left: 2px;
+  color: slategray;
+  margin-left: 10px;
+}
+
+.post-content-wrapper {
+  width: 100%;
+  height: 100%;
+  grid-area: post-content-wrapper;
+  border-top: 1px solid rgba(112, 128, 144, 0.081);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.post-content-wrapper p {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+  margin-left: 2px;
+}
+
+.post-crudbtn-wrapper {
+  width: 100%;
+  height: 100%;
+  grid-area: post-crudbtn-wrapper;
+  /* border: 1px solid orange; */
+  border-top: 1px solid rgba(15, 69, 124, 0.117);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.post-crudbtn-wrapper button {
+  width: 50px;
+  height: 20px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#edit-btn {
+  background-color: lightgreen;
+}
+#delete-btn {
+  background-color: salmon;
+  margin-left: 10px;
+  
+}

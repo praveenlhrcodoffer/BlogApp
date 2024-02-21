@@ -1,0 +1,15 @@
+#header-wrapper {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#header-title {
+  margin-left: 3%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #635db0;
+}
