@@ -1,5 +1,5 @@
 <div id="form-wrapper">
-    <form action="handleData.php" id="form-tag" method="post">
+    <form action="handleData.php" id="form-tag" method="post" enctype="multipart/form-data">
         <div class="field-wrapper" id="title-wrapper">
             <div class="label-wrapper">
                 <p>TITLE</p>
@@ -18,6 +18,16 @@
             </div>
         </div>
 
+        <div class="field-wrapper" id="image-wrapper">
+            <div class="label-wrapper">
+                <p>BLOG IMAGE</p>
+            </div>
+            <div class="input-wrapper">
+            <input id="fileToUpload" name="fileToUpload" type="file" accept="image/*" />
+
+            </div>
+        </div>
+
         <div class="field-wrapper" id="content-wrapper">
             <div class="label-wrapper">
                 <p>CONTENT</p>
@@ -28,7 +38,7 @@
         </div>
 
         <div id="submitBtn-wrapper">
-            <button  type="submit">Submit</button>
+            <button name="insert" type="submit">Submit</button>
         </div>
 
     </form>

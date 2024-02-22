@@ -16,11 +16,14 @@
   grid-template-rows: minmax(0, 0.5fr) minmax(0, 1fr) minmax(0, 0.5fr);
   grid-template-areas:
     "title-wrapper author-wrapper"
-    "content-wrapper content-wrapper"
+    "image-wrapper content-wrapper"
     "submitBtn-wrapper submitBtn-wrapper";
+
   grid-row-gap: 4%;
   grid-column-gap: 2%;
 }
+
+
 
 .field-wrapper {
   width: 100%;
@@ -90,6 +93,12 @@
   /* border: 2px solid blue; */
 }
 
+
+#image-wrapper{
+  height: 100%;
+  width: 100%;
+  grid-area: image-wrapper;
+}
 #content-wrapper {
   height: 100%;
   width: 100%;
@@ -116,3 +125,4 @@
   height: 60%;
   cursor: pointer;
 }
+
